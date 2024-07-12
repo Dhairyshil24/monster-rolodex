@@ -8,7 +8,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-    name: 'taskrover'
+    name: {firstname:'Taskrover', lastname:' foundation'}
     };
   };
 
@@ -19,7 +19,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-          Hi {this.state.name} !
+          Hi {this.state.name.firstname}{this.state.name.lastname}!
           </p>
           <button
 
@@ -28,7 +28,7 @@ class App extends Component {
             this.setState(
               () => {
                 return{
-                  name: {firstname: 'Dhairyshil', lastname: 'Kamble' },
+                  name: {firstname: 'Dhairyshil', lastname: ' Kamble' },
 
           };
         },
